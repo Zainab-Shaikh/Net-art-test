@@ -12,11 +12,9 @@ import world from "./asserts/world.png";
 
 import style from "./styles/style.module.css";
 import classNames from "classnames";
-import { getByPlaceholderText } from "@testing-library/dom";
 
 function App() {
   const logoClass = classNames(style.logo, style.center);
-  const para = classNames(style.text, style.disInline);
   const machines = classNames(style.machines, style.center, style.text);
   const toolsName = classNames(style.text, style.center);
   const type = classNames(style.type);
