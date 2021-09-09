@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    to bottom,
+    white 10%,
+    rgb(255, 254, 224) 20%,
+    rgb(255, 249, 178) 60%
+  );
+}
+section {
+  padding: 1rem;
+}
+.logo {
+  /* text-align: center; */
+  height: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.award {
+  height: 43rem;
+  width: 40%;
+}
+.disFlex {
+  display: flex;
+}
+.mainContent {
+  padding: 0;
+}
+ul {
+  margin-top: 1em;
+}
+.text {
+  font-size: 1.2rem;
+}
+.peopleImg,
+.machines {
+  width: 100%;
+  height: 28rem;
+  margin-top: 1em;
+}
+.machines {
+  width: 80%;
+  height: 20rem;
+  margin-bottom: 0.5em;
+}
+span {
+  font-weight: bold;
+}
+.disInline,
+.type > li {
+  display: inline;
+}
+.type > li:last-child {
+  border-right: none;
+}
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: rgb(236, 50, 55);
+  padding: 0;
+  margin-top: 1rem;
+}
+.type {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.type > li {
+  padding: 0 0.2rem;
+  border-right: 2px solid rgb(236, 50, 55);
+}
+.footer {
+  background-color: rgb(236, 50, 55);
+  margin: 0.3rem;
+  justify-content: space-around;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.footerIcon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+}
+.footer div {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  /* .peopleImg {
+    height: 20rem;
+  } */
+  .award {
+    height: 50rem;
+    width: 40%;
+  }
+  .machines {
+    width: 80%;
+    height: 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    height: 6rem;
+  }
+  .disFlex {
+    flex-wrap: wrap;
+  }
+  .award {
+    flex-basis: 100%;
+  }
+  .text {
+    text-align: justify;
+  }
+  .peopleImg {
+    width: 80%;
+    height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+@media (max-width: 411px) {
+  .award {
+    height: 25rem;
+  }
+  .peopleImg {
+    width: 90%;
+  }
+  .machines {
+    width: 100%;
+    height: 12rem;
+  }
+
+  .type,
+  .text,
+  h3 {
+    font-size: 0.9rem;
+  }
+  .type > li:last-child {
+    display: inline-block;
+  }
+}
