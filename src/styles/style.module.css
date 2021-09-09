@@ -137,6 +137,9 @@ span {
   .award {
     height: 25rem;
   }
+  .mainContent {
+    padding: 0.3rem;
+  }
   .peopleImg {
     width: 90%;
   }

@@ -22,10 +22,10 @@ function App() {
   return (
     <>
       {/* logo */}
-      <Image src={logo} className={logoClass} />
-      <section class={style.disFlex}>
+      <Image src={logo} className={logoClass} alt="website logo" />
+      <section className={style.disFlex}>
         {/* Award image */}
-        <Image src={award} className={style.award}></Image>
+        <Image src={award} className={style.award} alt="award image"></Image>
         <section className={style.mainContent}>
           <Header text="C.R.I. PUMPS WINS THE NATIONAL ENERGY CONSERVATION AWARD 2018 for the 4th time."></Header>
           <ul>
@@ -42,7 +42,11 @@ function App() {
               />
             </li>
           </ul>
-          <Image src={people} className={style.peopleImg} />
+          <Image
+            src={people}
+            className={style.peopleImg}
+            alt="people receiving award image"
+          />
           <p className={style.text}>
             Government of India has awarded the
             <span> "National Energy Conservation Award 2018"</span>. Mr. G.
@@ -58,7 +62,7 @@ function App() {
           className={toolsName}
           text="INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF POWER FOR THE NATION. "
         />
-        <Image src={machinesImg} className={machines} />
+        <Image src={machinesImg} className={machines} alt="machines Image" />
         <Paragraph
           text="Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables - Solar Systems - Motors "
           className={toolsName}
@@ -94,15 +98,19 @@ function App() {
       {/* Footer contact Page */}
       <section className={footer}>
         <div>
-          <Image src={phone} className={style.footerIcon} />
+          <Image src={phone} className={style.footerIcon} alt="phone icon" />
           Toll free 1800 200 1234
         </div>
         <div>
-          <Image src={facebook} className={style.footerIcon} />
+          <Image
+            src={facebook}
+            className={style.footerIcon}
+            alt="facebook icon"
+          />
           www.facebook.com/cripumps
         </div>
         <div>
-          <Image src={world} className={style.footerIcon} />
+          <Image src={world} className={style.footerIcon} alt="website icon" />
           www.crigroups.com
         </div>
       </section>
